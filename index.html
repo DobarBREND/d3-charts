@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bar Chart</title>
+        <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+		<script type="text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+		<link rel="icon" type="text/x-icon" href="./icons.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	</head>
+	<body>
+   
+		<header>
+		  <!-- Sidebar -->
+		  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+			<div class="position-sticky">
+				<img src="./icons.png" alt="logo" id="logo">
+			  <div class="list-group list-group-flush mx-3 mt-4">
+				<a href="#" class="list-group-item list-group-item-action py-2 ripple">
+					<span>D3 Bar Chart 1</span></a>
+							
+				<a href="#bc2" class="list-group-item list-group-item-action py-2 ripple">
+					<span>D3 Bar Chart 2</span></a>
+				
+				<a href="#bc3" class="list-group-item list-group-item-action py-2 ripple">
+					<span>D3 Pie Chart</span></a>
+			  </div>
+			</div>
+		  </nav>
+		  </header>
+		  
+		  <!-- Sidebar -->
+
+			<h1>D3 Bar Chart 1</h1>
+			<script type="text/javascript" src="scripts.js"></script>
+			<div class="container-fluid text-center">
+				
+				<div class="table">
+				<table>
+					<thead>
+						<tr>
+							<th>ORDER</th>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+							<th>5</th>
+							<th>6</th>
+							<th>7</th>
+							<th>8</th>
+							<th>9</th>
+							<th>10</th>
+							<th>11</th>
+							<th>12</th>
+							<th>13</th>
+							<th>14</th>
+							<th>15</th>
+							<th>16</th>
+							<th>17</th>
+							<th>18</th>
+							<th>19</th>
+							<th>20</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>NUMBERS</td>
+							<td>5</td>
+							<td>10</td>
+							<td>15</td>
+							<td>20</td>
+							<td>25</td>
+							<td>30</td>
+							<td>35</td>
+							<td>40</td>
+							<td>45</td>
+							<td>50</td>
+							<td>43</td>
+							<td>40</td>
+							<td>32</td>
+							<td>29</td>
+							<td>22</td>
+							<td>18</td>
+							<td>13</td>
+							<td>11</td>
+							<td>8</td>
+							<td>6</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				
+				
+				<div id="bc2">
+					<h1>D3 Bar Chart 2</h1>
+					<div id="bc1-container"></div>
+				</div>
+				
+				<script type="text/javascript" src="scripts1.js"></script>
+				
+				
+				<div id="bc3">
+					<h1>D3 Pie Chart</h1>
+					<h3>Legend</h3>
+					<div id="bc3-container"></div>
+					
+				</div>
+				
+				<script type="text/javascript" src="scripts3.js"></script>
+			
+		</div>
+	
+	</body>
+</html>

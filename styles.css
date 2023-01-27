@@ -1,0 +1,132 @@
+body {
+    background-color: gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	margin: 15px 0;
+}
+
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+.table td:hover {border: 2px solid #000;}
+
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.table th:nth-child(1), td:nth-child(1){
+	text-align: left;
+}
+
+
+
+#logo {
+	background-color: blue;
+	padding: 15px;
+	margin: 0;
+	position: fixed;
+	top: 15px;
+	left: 35px;
+	width: 55px;
+}
+
+.rectangle:hover {
+	fill: #000;
+	opacity: 0.3;
+	box-shadow: 5px 5px black;
+}
+
+h1 {
+	margin-top: 55px !important;
+}
+
+h3 {
+	margin-left: 280px;
+	z-index: 1;
+	position: relative;
+	left: 0;
+	top: 15vh;
+}
+
+
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+  
+}
+
+.inside {
+	font-size: 25px;
+	font-weight: normal;
+	fill: white;
+}
+
+.label {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.country {
+	fill: #eee;
+	stroke: #999;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+  h3 {
+	top: 7vh;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
